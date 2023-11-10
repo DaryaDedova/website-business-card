@@ -1,0 +1,328 @@
+@yellow: rgb(255, 191, 0);
+@white: white;
+@grey: grey;
+@back-col: rgb(240, 240, 240);
+@black: black;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+    background-color: @back-col;
+
+    img{
+        width: 100%;
+    }
+
+    div:nth-child(1){
+        align-self: center;
+        padding: 0 40px 0 60px;
+    }
+
+    h1, h3{
+        text-transform: uppercase;
+
+        span:nth-child(2){
+            color: @yellow;
+        }
+    }
+
+    h1 span, h5{
+        font-weight: bold;
+
+    }
+
+    h5{
+        background-color: @yellow;
+        padding: 2px 5px;
+        display: inline-block;
+    }
+
+    p{
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: @white;
+        background-color: @yellow;
+        padding: 10px;
+        border-radius: 50px;
+        
+        &:hover{
+            background-color: @back-col;
+            color: @yellow;
+            border: 2px solid @yellow;
+        }
+    }
+
+    h3, h5{
+        margin-bottom: 20px;
+    }
+}
+
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background-color: @back-col;
+
+    .one_stat{
+        width: 100%;
+        background-color: @yellow;
+        // height: ;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .list {
+        text-align: center;
+        text-transform: uppercase;
+
+        li:hover{
+            color: @white;
+            cursor: pointer;
+        }
+    }
+
+    .two_2{
+        .header_two_2{
+            width: 80%;
+            border: 1px solid @grey;
+            text-transform: uppercase;
+            font-weight: bolder;
+            text-align: center;
+            padding: 20px;
+            font-size: 30pt;
+            margin: 40px auto;
+        }
+
+        .tw_1{
+            display: flex;
+            flex-direction: column;
+            gap: 3%;
+            margin-bottom: 40px;
+            text-align: justify;            
+            width: 80%;
+            margin: auto;
+
+            .name_about_me{
+                font-size: 20pt;
+                margin-bottom: 20px;
+                .nameMe{
+                    font-weight: bold;
+                }
+            }
+
+            .text_about_me{
+                font-size: 14pt;
+                margin-bottom: 20px;
+            }
+
+            .two_about_me{
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+
+                .two_about_me_1{
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    background-color: @black;
+                    color: @yellow;
+                }
+            }
+        }
+    }
+    
+    .two_3{
+        .header_two_3{
+            width: 80%;
+            border: 1px solid @grey;
+            text-transform: uppercase;
+            font-weight: bolder;
+            text-align: center;
+            padding: 20px;
+            font-size: 30pt;
+            margin: 40px auto;
+        }
+
+        .rows{
+            display: flex;
+            gap: 3%;
+            margin-bottom: 40px;
+            text-align: justify;
+
+            p{
+                font-size: 10pt;
+            }
+        }
+
+        .tw_2{
+            width: 80%;
+            margin: auto;
+        }
+
+        h3{
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        h4{
+            margin-bottom: 10px;
+        }
+
+        .head_color{
+            background-color: @yellow;
+            padding: 5px;
+            color: @white;
+            display: inline-block;
+            border-radius: 25px;
+        }
+        
+        .h3_2{
+            margin-top: 40px;
+        }
+
+        .rows2{
+            margin-bottom: 80px;
+        }
+    }
+
+    .two_4{
+        .header_two_4{
+            width: 80%;
+            border: 1px solid @grey;
+            text-transform: uppercase;
+            font-weight: bolder;
+            text-align: center;
+            padding: 20px;
+            font-size: 30pt;
+            margin: 40px auto;
+        }
+
+        .rows_4{
+            width: 80%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            // gap: 2%;
+            column-gap: 2%;
+            row-gap: 4%;
+            margin: auto;
+            margin-bottom: 80px;
+
+            .user_photo{
+                width: 150px;
+            }
+
+            .col{
+                background-color: @black;
+                padding: 5%;
+                color: @white;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .col>div:nth-child(3){
+                grid-row: 2;
+                grid-column: 1 /span 2;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                margin-top: 10px;
+                
+            }
+
+            .star{
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            .text{
+                justify-self: end;
+            }
+
+
+            .col>div:nth-child(2){
+                align-self: center;
+                h3, h4, p{
+                    margin-bottom: 5px;
+                }
+                h3{
+                    font-size: 16pt;
+                    color: @yellow;
+                }
+
+                h4{
+                    font-size: 12pt;
+                }
+                p{
+                    font-size: 10pt;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+
+    .two_5{
+        padding-bottom: 80px;
+
+        .header_two_5{            
+            width: 80%;
+            border: 1px solid @grey;
+            text-transform: uppercase;
+            font-weight: bolder;
+            text-align: center;
+            padding: 20px;
+            font-size: 30pt;
+            margin: 40px auto;
+        }
+
+        .porto_flex{
+            width: 80%;
+            margin: 20px auto 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            column-gap: 2%;
+            row-gap: 4%;
+
+            img{
+                width: 100%;
+                height: 270px;
+                margin-bottom: 10px;
+            }
+        }
+
+        .two_5_stst{
+            ul{
+                list-style-type: none;
+                display: flex;
+                gap: 2%;
+                justify-content: center;
+                margin-top: 20px;
+                font-size: 16pt;
+
+            }
+
+            .activ{
+                font-weight: bold;
+                color: @yellow;
+                cursor: pointer;
+            }
+
+            li:hover{
+                font-weight: bold;
+                color: @yellow;
+                cursor: pointer;
+            }
+        }
+    }
+    
+}

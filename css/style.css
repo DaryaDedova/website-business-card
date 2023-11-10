@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.home {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: auto;
+  background-color: #f0f0f0;
+}
+.home img {
+  width: 100%;
+}
+.home div:nth-child(1) {
+  align-self: center;
+  padding: 0 40px 0 60px;
+}
+.home h1,
+.home h3 {
+  text-transform: uppercase;
+}
+.home h1 span:nth-child(2),
+.home h3 span:nth-child(2) {
+  color: #ffbf00;
+}
+.home h1 span,
+.home h5 {
+  font-weight: bold;
+}
+.home h5 {
+  background-color: #ffbf00;
+  padding: 2px 5px;
+  display: inline-block;
+}
+.home p {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.home a {
+  text-decoration: none;
+  color: white;
+  background-color: #ffbf00;
+  padding: 10px;
+  border-radius: 50px;
+}
+.home a:hover {
+  background-color: #f0f0f0;
+  color: #ffbf00;
+  border: 2px solid #ffbf00;
+}
+.home h3,
+.home h5 {
+  margin-bottom: 20px;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  background-color: #f0f0f0;
+}
+main .one_stat {
+  width: 100%;
+  background-color: #ffbf00;
+}
+main .one_stat img {
+  width: 100%;
+}
+main .list {
+  text-align: center;
+  text-transform: uppercase;
+}
+main .list li:hover {
+  color: white;
+  cursor: pointer;
+}
+main .two_2 .header_two_2 {
+  width: 80%;
+  border: 1px solid grey;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align: center;
+  padding: 20px;
+  font-size: 30pt;
+  margin: 40px auto;
+}
+main .two_2 .tw_1 {
+  display: flex;
+  flex-direction: column;
+  gap: 3%;
+  margin-bottom: 40px;
+  text-align: justify;
+  width: 80%;
+  margin: auto;
+}
+main .two_2 .tw_1 .name_about_me {
+  font-size: 20pt;
+  margin-bottom: 20px;
+}
+main .two_2 .tw_1 .name_about_me .nameMe {
+  font-weight: bold;
+}
+main .two_2 .tw_1 .text_about_me {
+  font-size: 14pt;
+  margin-bottom: 20px;
+}
+main .two_2 .tw_1 .two_about_me {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+main .two_2 .tw_1 .two_about_me .two_about_me_1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: black;
+  color: #ffbf00;
+}
+main .two_3 .header_two_3 {
+  width: 80%;
+  border: 1px solid grey;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align: center;
+  padding: 20px;
+  font-size: 30pt;
+  margin: 40px auto;
+}
+main .two_3 .rows {
+  display: flex;
+  gap: 3%;
+  margin-bottom: 40px;
+  text-align: justify;
+}
+main .two_3 .rows p {
+  font-size: 10pt;
+}
+main .two_3 .tw_2 {
+  width: 80%;
+  margin: auto;
+}
+main .two_3 h3 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+main .two_3 h4 {
+  margin-bottom: 10px;
+}
+main .two_3 .head_color {
+  background-color: #ffbf00;
+  padding: 5px;
+  color: white;
+  display: inline-block;
+  border-radius: 25px;
+}
+main .two_3 .h3_2 {
+  margin-top: 40px;
+}
+main .two_3 .rows2 {
+  margin-bottom: 80px;
+}
+main .two_4 .header_two_4 {
+  width: 80%;
+  border: 1px solid grey;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align: center;
+  padding: 20px;
+  font-size: 30pt;
+  margin: 40px auto;
+}
+main .two_4 .rows_4 {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2%;
+  row-gap: 4%;
+  margin: auto;
+  margin-bottom: 80px;
+}
+main .two_4 .rows_4 .user_photo {
+  width: 150px;
+}
+main .two_4 .rows_4 .col {
+  background-color: black;
+  padding: 5%;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+main .two_4 .rows_4 .col > div:nth-child(3) {
+  grid-row: 2;
+  grid-column: 1 / span 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 10px;
+}
+main .two_4 .rows_4 .star img {
+  width: 20px;
+  height: 20px;
+}
+main .two_4 .rows_4 .text {
+  justify-self: end;
+}
+main .two_4 .rows_4 .col > div:nth-child(2) {
+  align-self: center;
+}
+main .two_4 .rows_4 .col > div:nth-child(2) h3,
+main .two_4 .rows_4 .col > div:nth-child(2) h4,
+main .two_4 .rows_4 .col > div:nth-child(2) p {
+  margin-bottom: 5px;
+}
+main .two_4 .rows_4 .col > div:nth-child(2) h3 {
+  font-size: 16pt;
+  color: #ffbf00;
+}
+main .two_4 .rows_4 .col > div:nth-child(2) h4 {
+  font-size: 12pt;
+}
+main .two_4 .rows_4 .col > div:nth-child(2) p {
+  font-size: 10pt;
+  text-align: justify;
+}
+main .two_5 {
+  padding-bottom: 80px;
+}
+main .two_5 .header_two_5 {
+  width: 80%;
+  border: 1px solid grey;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align: center;
+  padding: 20px;
+  font-size: 30pt;
+  margin: 40px auto;
+}
+main .two_5 .porto_flex {
+  width: 80%;
+  margin: 20px auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2%;
+  row-gap: 4%;
+}
+main .two_5 .porto_flex img {
+  width: 100%;
+  height: 270px;
+  margin-bottom: 10px;
+}
+main .two_5 .two_5_stst ul {
+  list-style-type: none;
+  display: flex;
+  gap: 2%;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 16pt;
+}
+main .two_5 .two_5_stst .activ {
+  font-weight: bold;
+  color: #ffbf00;
+  cursor: pointer;
+}
+main .two_5 .two_5_stst li:hover {
+  font-weight: bold;
+  color: #ffbf00;
+  cursor: pointer;
+}

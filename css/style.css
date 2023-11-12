@@ -106,12 +106,62 @@ main .two_2 .tw_1 .text_about_me {
 main .two_2 .tw_1 .two_about_me {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  margin-bottom: 100px;
 }
 main .two_2 .tw_1 .two_about_me .two_about_me_1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background-color: black;
   color: #ffbf00;
+  background-color: black;
+}
+main .two_2 .tw_1 .two_about_me .two_about_me_1 .statistics {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: auto;
+  gap: 40px;
+  text-align: center;
+}
+main .two_2 .tw_1 .two_about_me .two_about_me_1 .statistics div:nth-child(1) {
+  margin: auto;
+}
+main .two_2 .tw_1 .two_about_me .two_about_me_1 .statistics p {
+  color: white;
+}
+main .two_2 .tw_1 .two_about_me .two_about_me_1 .statistics .bold {
+  font-weight: bold;
+  font-size: 30pt;
+  text-align: center;
+}
+main .two_2 .tw_1 .two_about_me .two_about_me_2 {
+  margin-left: 20px;
+}
+main .two_2 .tw_1 .two_about_me .two_about_me_2 h4 {
+  font-size: 20pt;
+  margin-bottom: 20px;
+}
+main .two_2 .tw_1 .two_about_me .two_about_me_2 .facts_about_me {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: max-content;
+}
+main .two_2 .tw_1 .two_about_me .two_about_me_2 .facts_about_me .image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+main .two_2 .tw_1 .two_about_me .two_about_me_2 .facts_about_me .image img {
+  width: 100px;
+  height: 100px;
+}
+main .two_2 .tw_1 .two_about_me .two_about_me_2 .facts_about_me .facts_text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-left: 20px;
 }
 main .two_3 .header_two_3 {
   width: 80%;

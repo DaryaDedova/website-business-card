@@ -130,12 +130,73 @@ main{
             .two_about_me{
                 display: grid;
                 grid-template-columns: 2fr 1fr;
+                margin-bottom: 100px;
 
                 .two_about_me_1{
                     display: grid;
                     grid-template-columns: repeat(2, 1fr);
-                    background-color: @black;
                     color: @yellow;
+                    background-color: @black;
+
+                    .statistics{
+                        height: 100%;
+                        width: 100%;
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        margin: auto;
+                        gap: 40px;
+                        text-align: center;
+
+                        div:nth-child(1){
+                            margin: auto;
+                        }
+
+                        p{
+                            color: @white;
+                        }
+
+                        .bold{
+                            font-weight: bold;
+                            font-size: 30pt;
+                            text-align: center;
+                        }
+                        
+                    }
+                }
+
+                .two_about_me_2{
+                    margin-left: 20px;
+
+                    h4{
+                        font-size: 20pt;
+                        margin-bottom: 20px
+                    }
+                    
+                    .facts_about_me{
+                        display: grid;
+                        grid-template-columns: 1fr 2fr;
+                        height: max-content;
+
+                        .image{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: space-around;
+                            gap: 10px;
+    
+                            img{
+                                width: 100px;
+                                height: 100px;
+                            }
+                        }
+
+                        .facts_text{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 40px;
+                            padding-left: 20px;
+                        }
+                    }
                 }
             }
         }

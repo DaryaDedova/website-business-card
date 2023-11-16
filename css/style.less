@@ -3,6 +3,7 @@
 @grey: grey;
 @back-col: rgb(240, 240, 240);
 @black: black;
+@popup: rgb(125, 125, 125);
 
 *{
     margin: 0;
@@ -16,8 +17,17 @@
     height: auto;
     background-color: @back-col;
 
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+
     img{
         width: 100%;
+        height: 100%;
     }
 
     div:nth-child(1){
@@ -72,6 +82,12 @@ main{
     display: grid;
     grid-template-columns: 1fr 3fr;
     background-color: @back-col;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 
     .one_stat{
         width: 100%;
@@ -385,5 +401,201 @@ main{
             }
         }
     }
+
+    .two_6{
+        padding-bottom: 80px;
+
+        .header_two_6{            
+            width: 80%;
+            border: 1px solid @grey;
+            text-transform: uppercase;
+            font-weight: bolder;
+            text-align: center;
+            padding: 20px;
+            font-size: 30pt;
+            margin: 40px auto;
+        }
+
+        .text_contact{
+            width: 80%;
+            text-align: start;
+            padding: 20px;
+            margin: 40px auto;
+
+            .text_contact_1{
+                font-size: 20pt;
+                padding-bottom: 20px;
+
+                .bold{
+                    font-weight: bold;
+                }
+            }
+            p{
+                text-align: justify;
+                font-size: 15pt;
+            }
+        }
+
+        .contact{
+            width: 80%;
+            padding: 20px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            .info{
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                align-self: center;
+                gap: 20px;
+
+                div{
+                    margin: auto;
+                }
+
+                img{
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+        }
+        h3{
+            width: 80%;
+            padding: 20px;
+            margin: 40px auto;
+            text-transform: uppercase;
+            font-size: 26pt;
+            text-align: center;
+        }
+    }
     
+}
+
+
+nav{
+    position: fixed;
+    top: 50%;
+    right: 2%;
+    transform: translate(0, -50%);
+
+    z-index: 1;
+    width: 50px;
+    background-color: @yellow;
+    padding: 10px;
+
+    // display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 30px;
+
+    img{
+        width: 100%;
+    }
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(210, 210, 210, 0.397);
+    display: none;
+
+    .base{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 52%;
+        height: 59%;
+        background-color: @popup;
+
+    }
+
+    
+    .popup{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        height: 55%;
+        background-color: @white;        
+        box-shadow: 0 0 20px 2px rgb(163, 163, 163);
+
+        display: grid;
+        grid-template-columns: 1fr;
+
+        .popup_block{
+            width: 60%;
+            justify-self: end;
+            align-self: center;
+            padding: 2%;
+
+            h1{
+                text-transform: uppercase;
+                margin-bottom: 2%;
+                text-align: center;
+            }
+
+            p{
+                font-size: 10pt;
+                margin-bottom: 2%;
+                width: 90%;
+                text-align: justify;
+                margin: auto;
+            }
+
+            form{
+                text-align: center;
+
+                .email{
+                    margin-bottom: 2%;
+                    border: none;
+                    border-bottom: 1px solid @popup;
+                    width: 80%;
+                    padding: 10px;
+
+                    &::placeholder{
+                        color: @popup;
+                        text-align: center;
+                    }
+                }
+            }
+            .sub{
+                text-transform: uppercase;
+                font-size: 14pt;
+                padding: 12px 58px;
+                border: none;
+                background-color: @popup;
+                border-radius: 30px;
+                margin: 3% 0;
+            }
+
+            .text2{
+                width: 50%;
+            }
+        }
+
+        .close_popup{
+            position: absolute;
+            top: 2%;
+            right: 1%;
+            cursor: pointer;
+        }
+
+    }
+    .popup_img{
+        position: absolute;
+        top: 15%;
+        left: 15%;
+
+        img{
+            width: 280px;
+            height: 350px;
+            box-shadow: 0 0 20px 2px @popup;
+        }
+    }
 }

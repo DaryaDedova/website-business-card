@@ -8,9 +8,16 @@
   grid-template-columns: repeat(2, 1fr);
   height: auto;
   background-color: #f0f0f0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .home img {
   width: 100%;
+  height: 100%;
 }
 .home div:nth-child(1) {
   align-self: center;
@@ -57,6 +64,12 @@ main {
   display: grid;
   grid-template-columns: 1fr 3fr;
   background-color: #f0f0f0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 main .one_stat {
   width: 100%;
@@ -311,4 +324,169 @@ main .two_5 .two_5_stst li:hover {
   font-weight: bold;
   color: #ffbf00;
   cursor: pointer;
+}
+main .two_6 {
+  padding-bottom: 80px;
+}
+main .two_6 .header_two_6 {
+  width: 80%;
+  border: 1px solid grey;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align: center;
+  padding: 20px;
+  font-size: 30pt;
+  margin: 40px auto;
+}
+main .two_6 .text_contact {
+  width: 80%;
+  text-align: start;
+  padding: 20px;
+  margin: 40px auto;
+}
+main .two_6 .text_contact .text_contact_1 {
+  font-size: 20pt;
+  padding-bottom: 20px;
+}
+main .two_6 .text_contact .text_contact_1 .bold {
+  font-weight: bold;
+}
+main .two_6 .text_contact p {
+  text-align: justify;
+  font-size: 15pt;
+}
+main .two_6 .contact {
+  width: 80%;
+  padding: 20px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+main .two_6 .contact .info {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-self: center;
+  gap: 20px;
+}
+main .two_6 .contact .info div {
+  margin: auto;
+}
+main .two_6 .contact .info img {
+  width: 150px;
+  height: 150px;
+}
+main .two_6 h3 {
+  width: 80%;
+  padding: 20px;
+  margin: 40px auto;
+  text-transform: uppercase;
+  font-size: 26pt;
+  text-align: center;
+}
+nav {
+  position: fixed;
+  top: 50%;
+  right: 2%;
+  transform: translate(0, -50%);
+  z-index: 1;
+  width: 50px;
+  background-color: #ffbf00;
+  padding: 10px;
+  flex-direction: column;
+  gap: 30px;
+  border-radius: 30px;
+}
+nav img {
+  width: 100%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(210, 210, 210, 0.397);
+  display: none;
+}
+.overlay .base {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 52%;
+  height: 59%;
+  background-color: #7d7d7d;
+}
+.overlay .popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 55%;
+  background-color: white;
+  box-shadow: 0 0 20px 2px #a3a3a3;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.overlay .popup .popup_block {
+  width: 60%;
+  justify-self: end;
+  align-self: center;
+  padding: 2%;
+}
+.overlay .popup .popup_block h1 {
+  text-transform: uppercase;
+  margin-bottom: 2%;
+  text-align: center;
+}
+.overlay .popup .popup_block p {
+  font-size: 10pt;
+  margin-bottom: 2%;
+  width: 90%;
+  text-align: justify;
+  margin: auto;
+}
+.overlay .popup .popup_block form {
+  text-align: center;
+}
+.overlay .popup .popup_block form .email {
+  margin-bottom: 2%;
+  border: none;
+  border-bottom: 1px solid #7d7d7d;
+  width: 80%;
+  padding: 10px;
+}
+.overlay .popup .popup_block form .email::placeholder {
+  color: #7d7d7d;
+  text-align: center;
+}
+.overlay .popup .popup_block .sub {
+  text-transform: uppercase;
+  font-size: 14pt;
+  padding: 12px 58px;
+  border: none;
+  background-color: #7d7d7d;
+  border-radius: 30px;
+  margin: 3% 0;
+}
+.overlay .popup .popup_block .text2 {
+  width: 50%;
+}
+.overlay .popup .close_popup {
+  position: absolute;
+  top: 2%;
+  right: 1%;
+  cursor: pointer;
+}
+.overlay .popup_img {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+}
+.overlay .popup_img img {
+  width: 280px;
+  height: 350px;
+  box-shadow: 0 0 20px 2px #7d7d7d;
 }

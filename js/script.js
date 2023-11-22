@@ -16,6 +16,7 @@ $(document).ready(function(){
     }
 
     function showTabs(){
+
         let data = this.getAttribute('data');
         let block = document.querySelectorAll('.block');
 
@@ -25,6 +26,33 @@ $(document).ready(function(){
 
         document.querySelector(`.block[data = "${data}"]`).style.display = 'block';
     }
+
+
+
+//________________________________________________________________//
+
+
+
+    let list_2 = document.querySelectorAll('.list_2');
+
+    list_2.forEach(function(element){
+        element.onclick = showTabsNav;
+    })
+
+    function showTabsNav(){
+        
+        $('main').show()
+        let data = this.getAttribute('data');
+        let block = document.querySelectorAll('.block');
+
+        for(let i = 0; i < block.length; i++){
+            block[i].style.display = 'none';
+            document.querySelector(`.block[data = "${data}"]`).style.display = 'block';
+        } 
+    }
+
+    
+    
 
 
     // let graphic = document.querySelectorAll('.graphic');
@@ -85,6 +113,14 @@ $(document).ready(function(){
     $('.next').click(function(){
         $('main').show();
         $('.home').hide();
+    })
+
+//__________________//
+
+
+    $('.resum_img').click(function(){
+        $('.home').hide();
+        $('main').show();
     })
 
     // ____________________________//

@@ -599,3 +599,227 @@ nav{
         }
     }
 }
+
+
+@aloe-bac: rgb(36, 110, 82);
+.overlay_aloe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(210, 210, 210, 0.397);
+    display: none;
+
+    .popup_aloe{
+        width: 70%;
+        position: absolute;
+        top: 50%;
+        left: 50%;        
+        transform: translate(-50%, -50%);
+        background-color: @white;
+        
+        .nav_popup{
+            display: grid;
+            grid-template-columns: 3fr 7fr 1fr;
+
+            img{
+                width: 20px;
+                height: 20px;
+                align-self: center;
+                cursor: pointer;
+            }
+            
+
+            .one{
+                background-color: @aloe-bac;
+                color:@white;
+                padding: 20px;
+                text-transform: uppercase;
+                text-align: center;
+                font-weight: bold;
+                width: 70%;
+            }
+            div:nth-child(2){
+                background-color: @white;
+                display: flex;
+                padding: 10px 20px;
+                margin: 10px;
+
+                input{
+                    width: 100%;
+                    border: none;
+                    padding: 5px 10px;
+                    border-bottom: 1px solid @grey;
+                }
+            }
+
+            div:nth-child(3){
+                display: flex;
+                gap: 2%;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .center_aloe{
+            display: grid;
+            grid-template-columns: repeat(13, 1fr);
+            grid-template-rows: repeat(8, minmax(20px, 80px));
+
+            div:nth-child(1){ //зеленый блок (фон)
+                grid-column: 1/span 4;
+                grid-row: 1/span 8;
+                background-color: @white;
+            }
+            div:nth-child(2){ //белый блок (фон)
+                grid-column: 5/span 9;
+                grid-row: 1/span 8;
+                background-color: @aloe-bac;
+            }
+            div:nth-child(3){ //текстовые поля
+                grid-column: 8/span 5;
+                grid-row: 3/span 5;
+                color: @white;
+
+                h4{
+                    text-transform: uppercase;
+                    margin-bottom: 5%;
+                    font-size: 15pt;
+                }
+
+                h1{
+                    text-transform: uppercase;
+                    font-size: 30pt;
+                }
+            }
+
+            .aloe{
+                grid-column: 2/span 5;
+                grid-row: 2/span 5;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .text{
+                    background-color: transparent;
+
+                    p{
+                        color: @aloe-bac;
+                    }
+                    // p:nth-child(2){
+
+                    // }
+                }
+            }
+        }
+
+        .aloe_grid{
+            width: 46%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 30px;
+
+            position: absolute;
+            top: 68%;
+            left: 57%;
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+
+            .aloe_hover{
+                //блоки при наведении
+                display: none;
+            }
+
+            .aloe_text{
+                padding: 5px 20px;
+                font-size: 14pt;
+                color: @grey;
+            }
+        }
+    }
+}
+
+@med-width: 600px;
+
+@media screen and (max-width: @med-width){
+    main{
+        .two_5{        
+            .header_two_5{            
+                font-size: 25pt;
+            }
+        
+            .porto_flex{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        
+            .two_5_stst{
+                ul{
+                    font-size: 16pt;
+                }
+        
+                // .activ{
+                //     font-weight: bold;
+                //     color: @yellow;
+                //     cursor: pointer;
+                // }
+        
+                // li:hover{
+                //     font-weight: bold;
+                //     color: @yellow;
+                //     cursor: pointer;
+                // }
+            }
+        }
+    
+    }
+
+
+    .overlay{
+    
+        .base{
+            width: 75%;
+            height: 43%;
+        }
+        
+        .popup{
+            width: 70%;
+            height: 40%;
+    
+            .popup_block{
+    
+                h1{
+                    font-size: 20pt;
+                }
+                .sub{
+                    font-size: 12pt;
+                    padding: 10px 40px;
+                    cursor: pointer;
+                }
+    
+                .text2{
+                    width: 70%;
+                }
+            }
+    
+        }
+        .popup_img{
+            position: absolute;
+            top: 27%;
+            left: 7%;
+    
+            img{
+                width: 180px;
+                height: 250px;
+                box-shadow: none;
+            }
+        }
+    }
+
+    
+}

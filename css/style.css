@@ -490,3 +490,161 @@ nav img {
   height: 350px;
   box-shadow: 0 0 20px 2px #7d7d7d;
 }
+.overlay_aloe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(210, 210, 210, 0.397);
+  display: none;
+}
+.overlay_aloe .popup_aloe {
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+.overlay_aloe .popup_aloe .nav_popup {
+  display: grid;
+  grid-template-columns: 3fr 7fr 1fr;
+}
+.overlay_aloe .popup_aloe .nav_popup img {
+  width: 20px;
+  height: 20px;
+  align-self: center;
+  cursor: pointer;
+}
+.overlay_aloe .popup_aloe .nav_popup .one {
+  background-color: #246e52;
+  color: white;
+  padding: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  width: 70%;
+}
+.overlay_aloe .popup_aloe .nav_popup div:nth-child(2) {
+  background-color: white;
+  display: flex;
+  padding: 10px 20px;
+  margin: 10px;
+}
+.overlay_aloe .popup_aloe .nav_popup div:nth-child(2) input {
+  width: 100%;
+  border: none;
+  padding: 5px 10px;
+  border-bottom: 1px solid grey;
+}
+.overlay_aloe .popup_aloe .nav_popup div:nth-child(3) {
+  display: flex;
+  gap: 2%;
+  align-items: center;
+  justify-content: center;
+}
+.overlay_aloe .popup_aloe .center_aloe {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: repeat(8, minmax(20px, 80px));
+}
+.overlay_aloe .popup_aloe .center_aloe div:nth-child(1) {
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 8;
+  background-color: white;
+}
+.overlay_aloe .popup_aloe .center_aloe div:nth-child(2) {
+  grid-column: 5 / span 9;
+  grid-row: 1 / span 8;
+  background-color: #246e52;
+}
+.overlay_aloe .popup_aloe .center_aloe div:nth-child(3) {
+  grid-column: 8 / span 5;
+  grid-row: 3 / span 5;
+  color: white;
+}
+.overlay_aloe .popup_aloe .center_aloe div:nth-child(3) h4 {
+  text-transform: uppercase;
+  margin-bottom: 5%;
+  font-size: 15pt;
+}
+.overlay_aloe .popup_aloe .center_aloe div:nth-child(3) h1 {
+  text-transform: uppercase;
+  font-size: 30pt;
+}
+.overlay_aloe .popup_aloe .center_aloe .aloe {
+  grid-column: 2 / span 5;
+  grid-row: 2 / span 5;
+}
+.overlay_aloe .popup_aloe .center_aloe .aloe img {
+  width: 100%;
+  height: 100%;
+}
+.overlay_aloe .popup_aloe .center_aloe .aloe .text {
+  background-color: transparent;
+}
+.overlay_aloe .popup_aloe .center_aloe .aloe .text p {
+  color: #246e52;
+}
+.overlay_aloe .popup_aloe .aloe_grid {
+  width: 46%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  position: absolute;
+  top: 68%;
+  left: 57%;
+}
+.overlay_aloe .popup_aloe .aloe_grid img {
+  width: 100%;
+  height: 100%;
+}
+.overlay_aloe .popup_aloe .aloe_grid .aloe_hover {
+  display: none;
+}
+.overlay_aloe .popup_aloe .aloe_grid .aloe_text {
+  padding: 5px 20px;
+  font-size: 14pt;
+  color: grey;
+}
+@media screen and (max-width: 600px) {
+  main .two_5 .header_two_5 {
+    font-size: 25pt;
+  }
+  main .two_5 .porto_flex {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  main .two_5 .two_5_stst ul {
+    font-size: 16pt;
+  }
+  .overlay .base {
+    width: 75%;
+    height: 43%;
+  }
+  .overlay .popup {
+    width: 70%;
+    height: 40%;
+  }
+  .overlay .popup .popup_block h1 {
+    font-size: 20pt;
+  }
+  .overlay .popup .popup_block .sub {
+    font-size: 12pt;
+    padding: 10px 40px;
+    cursor: pointer;
+  }
+  .overlay .popup .popup_block .text2 {
+    width: 70%;
+  }
+  .overlay .popup_img {
+    position: absolute;
+    top: 27%;
+    left: 7%;
+  }
+  .overlay .popup_img img {
+    width: 180px;
+    height: 250px;
+    box-shadow: none;
+  }
+}

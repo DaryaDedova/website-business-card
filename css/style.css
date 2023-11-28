@@ -547,7 +547,7 @@ nav img {
 .overlay_aloe .popup_aloe .center_aloe {
   display: grid;
   grid-template-columns: repeat(13, 1fr);
-  grid-template-rows: repeat(8, minmax(20px, 80px));
+  grid-template-rows: repeat(8, minmax(20px, 70px));
 }
 .overlay_aloe .popup_aloe .center_aloe div:nth-child(1) {
   grid-column: 1 / span 4;
@@ -578,7 +578,7 @@ nav img {
   grid-row: 2 / span 5;
 }
 .overlay_aloe .popup_aloe .center_aloe .aloe img {
-  width: 100%;
+  width: 85%;
   height: 100%;
 }
 .overlay_aloe .popup_aloe .center_aloe .aloe .text {
@@ -593,7 +593,7 @@ nav img {
   grid-template-columns: repeat(3, 1fr);
   column-gap: 30px;
   position: absolute;
-  top: 68%;
+  top: 60%;
   left: 57%;
 }
 .overlay_aloe .popup_aloe .aloe_grid img {
@@ -607,6 +607,145 @@ nav img {
   padding: 5px 20px;
   font-size: 14pt;
   color: grey;
+}
+.overlay_aloe .popup_aloe .close_aloe {
+  position: absolute;
+  top: 90%;
+  left: 85%;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 10px;
+  font-size: 12pt;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.137);
+}
+.overlay_three {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(210, 210, 210, 0.397);
+  display: none;
+}
+.overlay_three .modal_win {
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 20px;
+}
+.overlay_three .modal_win h2 {
+  padding: 20px 20px;
+  border-bottom: 1px solid lightgrey;
+}
+.overlay_three .modal_win .modal_body {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid lightgrey;
+}
+.overlay_three .modal_win .modal_body img {
+  width: 70%;
+  margin: 20px;
+  box-shadow: 0px 0px 10px 1px grey;
+}
+.overlay_three .modal_win .modal_body .text_modal_three {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-right: 20px;
+}
+.overlay_three .modal_win .modal_body .text_modal_three h3 {
+  font-size: 18pt;
+}
+.overlay_three .modal_win .modal_body .text_modal_three p {
+  font-size: 14pt;
+  text-align: justify;
+}
+.overlay_three .modal_win .close_win {
+  padding: 20px 20px;
+  display: flex;
+  justify-content: end;
+}
+.overlay_three .modal_win .close_win button {
+  padding: 15px 30px;
+  border: none;
+  background-color: rgba(0, 100, 0, 0.575);
+  border-radius: 20px;
+  font-size: 12pt;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.overlay_three .modal_win .close_popup_win {
+  position: absolute;
+  top: 4%;
+  left: 93%;
+  cursor: pointer;
+}
+.overlay_four {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(210, 210, 210, 0.397);
+  display: none;
+}
+.overlay_four .popup_four {
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 20px;
+}
+.overlay_four .popup_four .cont_popup {
+  width: 100%;
+  padding: 30px;
+}
+.overlay_four .popup_four .cont_popup .head_popup {
+  width: 100%;
+  display: flex;
+}
+.overlay_four .popup_four .cont_popup .head_popup img {
+  width: 100%;
+  height: 380px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.overlay_four .popup_four .cont_popup .text_popup_four {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.overlay_four .popup_four .cont_popup .text_popup_four h2 {
+  font-size: 18pt;
+  text-align: center;
+}
+.overlay_four .popup_four .cont_popup .text_popup_four p {
+  font-size: 14pt;
+  text-align: justify;
+}
+.overlay_four .popup_four .cont_popup .btn_popup_four {
+  display: flex;
+  justify-content: end;
+}
+.overlay_four .popup_four .cont_popup .btn_popup_four button {
+  padding: 15px 30px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(255, 0, 0, 0.544);
+  font-size: 14pt;
+  cursor: pointer;
 }
 @media screen and (max-width: 600px) {
   main .two_5 .header_two_5 {

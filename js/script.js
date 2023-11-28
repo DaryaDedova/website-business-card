@@ -127,6 +127,7 @@ $(document).ready(function(){
 
     // модальные окна
 
+    // первое
 
     $('.mo_1').click(function(){
         $('.overlay').show();
@@ -136,7 +137,44 @@ $(document).ready(function(){
         $('.overlay').hide();
     })
 
+    // второе
 
+    $('.mo_2').click(function(){
+        $('.overlay_aloe').show();
+    })
+
+    $('.close_aloe').click(function(){
+        $('.overlay_aloe').hide();
+    })
+
+    // третье
+
+    $('.mo_3').click(function(){
+        $('.overlay_three').show();
+    })
+
+    $('.close_popup_win').click(function(){
+        $('.overlay_three').hide();
+    })
+
+    $('.close_win').click(function(){
+        $('.overlay_three').hide();
+    })
+
+
+    // четвертое
+
+    $('.mo_4').click(function(){
+        $('.overlay_four').show();
+    })
+
+    $('.close_popup_win').click(function(){
+        $('.overlay_four').hide();
+    })
+
+    $('.btn_popup_four').click(function(){
+        $('.overlay_four').hide();
+    })
 
 
 

@@ -177,6 +177,17 @@ $(document).ready(function(){
     })
 
 
+    $('.img_aloe').mouseenter(function(){
+        $('.aloe_hover_one').show();
+        $('.aloe_hover_two').show();
+        $('.aloe_hover_three').show();
+    })
+    
+    $('.img_aloe').mouseleave(function(){
+        $('.aloe_hover_one').hide();
+        $('.aloe_hover_two').hide();
+        $('.aloe_hover_three').hide();
+    })
 
 
 

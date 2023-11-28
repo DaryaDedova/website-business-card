@@ -177,15 +177,47 @@ $(document).ready(function(){
     })
 
 
-    $('.img_aloe').mouseenter(function(){
+    $('.img_aloe_one').mouseenter(function(){
         $('.aloe_hover_one').show();
+    })
+    
+    $('.img_aloe_one').mouseleave(function(){
+        $('.aloe_hover_one').hide();
+    })
+
+    $('.img_aloe_two').mouseenter(function(){
         $('.aloe_hover_two').show();
+    })
+    
+    $('.img_aloe_two').mouseleave(function(){
+        $('.aloe_hover_two').hide();
+    })
+
+    $('.img_aloe_three').mouseenter(function(){
         $('.aloe_hover_three').show();
     })
     
-    $('.img_aloe').mouseleave(function(){
+    $('.img_aloe_three').mouseleave(function(){
+        $('.aloe_hover_three').hide();
+    })
+
+    $('.aloe_hover_one').mouseenter(function(){
+        $('.aloe_hover_one').show();
+    })
+    $('.aloe_hover_two').mouseenter(function(){
+        $('.aloe_hover_two').show();
+    })
+    $('.aloe_hover_three').mouseenter(function(){
+        $('.aloe_hover_three').show();
+    })
+    
+    $('.aloe_hover_one').mouseleave(function(){
         $('.aloe_hover_one').hide();
+    })
+    $('.aloe_hover_two').mouseleave(function(){
         $('.aloe_hover_two').hide();
+    })
+    $('.aloe_hover_three').mouseleave(function(){
         $('.aloe_hover_three').hide();
     })
 

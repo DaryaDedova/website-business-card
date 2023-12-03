@@ -223,6 +223,58 @@ $(document).ready(function(){
 
 
 
+    let changeThemeButtons = document.querySelectorAll('.Theme_svg');
+
+    changeThemeButtons.forEach(button => {
+        button.addEventListener('click', function(){
+            //добавляем обработчик событий на клик
+            let theme = this.dataset.theme //помещаем в переменную название темы из атрибута data-theme
+            applyTheme(theme)//вызываем функцию, которая меняет тему и передаем в нее название
+        });
+    });
+
+
+    function applyTheme(themeName){
+        document.querySelector('[title = "theme"]').setAttribute('href', `css/theme-${themeName}.css`); //Помещаем путь к файлу темы в пустой link в head
+        changeThemeButtons.forEach(button => {
+            button.style.display = 'block'; //показываем все кнопки смены темы
+        })
+        document.querySelector(`[data-theme="${themeName}"]`).style.display = 'none';
+        localStorage.setItem('theme', themeName)
+    }
+
+
+    let activeTheme = localStorage.getItem('theme'); //Проверяем есть ли в LocalStorage записано значение для 'theme' и присваиваем его переменной
+    if(activeTheme === null || activeTheme === 'light'){
+        //если значение не записано, либо оно равно light применяем светлую тему
+        applyTheme('light');
+    }
+    else if(activeTheme === 'dark'){
+        applyTheme('dark')
+    }
+
+    mapGIS()
+
+    function mapGIS(){
+        let container = document.createElement('div'),
+            mapBlock = document.getElementById('mapBlock');
+        
+        container.id = 'map';
+        container.style.width = '100%';
+        container.style.height = '400px';
+        mapBlock.appendChild(container);
+    
+        DG.then(function () {
+                map = DG.map('map', {
+                    center: [55.70284007975821,37.53053864932481],
+                    zoom: 15
+                });
+                DG.marker([55.70284007975821,37.53053864932481]).addTo(map).bindPopup('МГУ');
+            })
+    }
+
+    
+
 
 
 

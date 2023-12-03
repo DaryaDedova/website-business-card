@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" title = "theme" href="#">
     <script src="js/code.jquery.com_jquery-3.7.1.js"></script>
     <script src="js/script.js"></script>
 </head>
@@ -36,6 +37,12 @@
         <div>
             <img src="img/man.png" alt="">
         </div>
+
+        <div class="dark-theme">
+            <img class="Theme_svg" data-theme="light" src="img/sun-svgrepo-com (1).svg" alt="" style= "display: none;">
+
+            <img class="Theme_svg" data-theme="dark" src="img/moon-svgrepo-com (1).svg" alt="" style= "display: block;">
+        </div>
     </header>
     <main>
         <section class="one_stat">
@@ -53,6 +60,11 @@
                     <li data="5" class="list_1">About me</li>
                     <li data="6" class="list_1">contact</li>
                 </ul>
+            </div>
+            <div class="dark-theme">
+                <img class="Theme_svg" data-theme="light" src="img/sun-svgrepo-com (1).svg" alt="" style= "display: block;">
+    
+                <img class="Theme_svg" data-theme="dark" src="img/moon-svgrepo-com (1).svg" alt="" style= "display: block;">
             </div>
         </section>
 
@@ -323,22 +335,32 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate autem hic sed ipsum laborum a est architecto soluta, cupiditate facere, minus voluptatem quia maxime dolore sit earum magnam adipisci aliquam.
                 </p>
             </div>
-            <div class="contact">
-                <div class="info">
-                    <img src="img/free-icon-monitor-1250704.png" alt="">
-                    <div>
-                        <p>Lorem ipsum dolor sit</p>
-                        <p>Lorem ipsum dolor sit</p>
-                    </div>
+            <div class="infoMap">
+                
+                <div class="mapOne">
+                    <!-- <button  id="create">Показать карту</button> -->
+                    <div id="mapBlock"></div>
+                    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
                 </div>
-                <div class="info">                    
-                    <img src="img/free-icon-phone-call-5441367.png" alt="">
-                    <div>
-                        <p>Lorem ipsum dolor sit</p>
-                        <p>Lorem ipsum dolor sit</p>
+
+                <div class="contact">
+                    <div class="info">
+                        <img src="img/free-icon-monitor-1250704.png" alt="">
+                        <div>
+                            <p>Lorem ipsum dolor sit</p>
+                            <p>Lorem ipsum dolor sit</p>
+                        </div>
+                    </div>
+                    <div class="info">                    
+                        <img src="img/free-icon-phone-call-5441367.png" alt="">
+                        <div>
+                            <p>Lorem ipsum dolor sit</p>
+                            <p>Lorem ipsum dolor sit</p>
+                        </div>
                     </div>
                 </div>
             </div>
+            
             <h3>thanks!</h3>
         </section>
 
@@ -512,6 +534,8 @@
             </div>
         </div>
     </div>
+
+
 
 </body>
 </html>

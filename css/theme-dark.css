@@ -1,0 +1,16 @@
+.home{
+    background-color: rgb(40, 40, 40);
+}
+
+.home h1, .home p, .home h3{
+    color: white;
+}
+
+.home a:hover{
+    background-color: rgb(40, 40, 40);
+}
+
+.two_2, .two_3, .two_4, .two_5, .two_6{
+    background-color: rgb(40, 40, 40);
+    color: white;
+}

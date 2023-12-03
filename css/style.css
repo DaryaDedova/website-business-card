@@ -60,6 +60,16 @@
 .home h5 {
   margin-bottom: 20px;
 }
+.home .dark-theme {
+  position: absolute;
+  top: 3%;
+  left: 3%;
+}
+.home .dark-theme img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
 main {
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -69,7 +79,7 @@ main {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: max-content;
 }
 main .one_stat {
   width: 100%;
@@ -77,6 +87,23 @@ main .one_stat {
 }
 main .one_stat img {
   width: 100%;
+}
+main .one_stat ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .one_stat .dark-theme {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+main .one_stat .dark-theme img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
 }
 main .list {
   text-align: center;
@@ -198,6 +225,7 @@ main .two_3 .rows p {
 main .two_3 .tw_2 {
   width: 80%;
   margin: auto;
+  margin-bottom: 200px;
 }
 main .two_3 h3 {
   text-transform: uppercase;
@@ -355,24 +383,33 @@ main .two_6 .text_contact p {
   text-align: justify;
   font-size: 15pt;
 }
-main .two_6 .contact {
+main .two_6 .infoMap {
   width: 80%;
   padding: 20px;
   margin: 40px auto;
   display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+main .two_6 .infoMap .mapOne {
+  background-color: yellowgreen;
+}
+main .two_6 .infoMap .contact {
+  justify-self: center;
+  align-self: center;
   grid-template-columns: repeat(2, 1fr);
 }
-main .two_6 .contact .info {
+main .two_6 .infoMap .contact .info {
   display: flex;
   flex-direction: row;
   justify-content: start;
   align-self: center;
   gap: 20px;
 }
-main .two_6 .contact .info div {
+main .two_6 .infoMap .contact .info div {
   margin: auto;
 }
-main .two_6 .contact .info img {
+main .two_6 .infoMap .contact .info img {
   width: 150px;
   height: 150px;
 }
